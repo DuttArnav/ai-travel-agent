@@ -42,7 +42,7 @@ def call_llm(prompt):
         response = requests.post(
             "https://router.huggingface.co/v1/chat/completions",
             headers={
-                "Authorization": f"Bearer {HF_TOKEN}",
+                "Authorization": f"Bearer {}",
                 "Content-Type": "application/json"
             },
             json=payload,
@@ -69,7 +69,7 @@ st.write("Plan trips with live web search support")
 
 user_query = st.text_input(
     "Where do you want to go?",
-    placeholder="Example: 3-day budget trip to Manali under ₹20,000"
+    placeholder="Example: 3-day budget trip to Manali under ₹30,000"
 )
 
 use_search = st.checkbox("Use live web search (weather, places, tips)")
