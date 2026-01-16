@@ -83,7 +83,7 @@ if st.button("Generate Plan"):
 
             if use_search:
                 search_results = search_web(user_query)
-                context = f"\n\nHere is recent web information:\n{search_results}\n"
+                context = f"\n\nHere is recent web information:\n{search_results}\n'
 
             final_prompt = f"""
 You are a smart travel planning assistant.
